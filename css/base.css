@@ -1,0 +1,44 @@
+:root {
+
+    --bg: #0b1220;
+    --card: #111827;
+
+    --primary: #00d4ff;
+    --secondary: #38bdf8;
+
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    background: var(--bg);
+    color: var(--text);
+
+    font-family: "Inter", sans-serif;
+
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: 80px 10%;
+}
+
+section:first-of-type {
+    padding-top: 40px;
+}

@@ -1,0 +1,126 @@
+.grid-bg {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: -1;
+
+    background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+
+    background-size: 40px 40px;
+}
+
+@media (max-width: 1000px) {
+
+    .hero-container {
+
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-buttons {
+
+        justify-content: center;
+    }
+
+    .hero-container h1 {
+
+        font-size: 3rem;
+    }
+
+    .profile-card {
+
+        width: 260px;
+        height: 260px;
+    }
+}
+
+.section-title {
+
+    font-size: 2rem;
+
+    margin: 0 0 28px;
+
+    position: relative;
+}
+
+.section-title::after {
+
+    content: "";
+
+    display: block;
+
+    width: 80px;
+    height: 3px;
+
+    background: var(--primary);
+
+    margin-top: 12px;
+
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+
+    .profile-row {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+    .profile-value {
+
+        text-align: left;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .project-showcase {
+
+        grid-template-columns: 1fr;
+    }
+
+    .project-title {
+
+        font-size: 2.2rem;
+    }
+
+    .project-meta {
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .navbar {
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .nav-links {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .github-panel {
+
+        grid-template-columns: 1fr;
+    }
+}
